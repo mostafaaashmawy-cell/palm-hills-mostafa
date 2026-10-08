@@ -1,6 +1,6 @@
 /**
  * Palm Hills Luxury Portfolio Landing Page Styles
- * Agency: propertiesegy
+ * Agency: properties-m
  * Design Edition: Imperial Ruby & Champagne Bronze Architectural Luxe
  */
 
@@ -786,6 +786,16 @@ button, input, select {
 .tag-scale {
   background: rgba(200, 168, 116, 0.9);
   color: #0D0F12;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.tag-lagoon {
+  background: rgba(14, 116, 144, 0.9);
+  color: #FFFFFF;
   padding: 5px 12px;
   border-radius: var(--radius-full);
   font-size: 0.72rem;

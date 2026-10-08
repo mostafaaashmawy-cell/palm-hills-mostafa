@@ -1,6 +1,6 @@
 /**
  * Palm Hills Luxury Portfolio Landing Page JavaScript
- * Agency: propertiesegy
+ * Agency: properties-m
  * WhatsApp Dedicated Line: 01222622253 (+20 12 2262 2253)
  * Note: Google Tags & Tracking snippets excluded per specification.
  */
@@ -97,7 +97,7 @@ function initFormSubmissions() {
       formData.set('name', fullName);
       formData.set('phone', fullPhone);
       formData.set('project', projectName);
-      formData.set('advisory_partner', 'propertiesegy');
+      formData.set('advisory_partner', 'properties-m');
       formData.set('contact_line', '01222622253');
       formData.set('submitted_at', new Date().toISOString());
 
@@ -191,8 +191,8 @@ function initProjectFilters() {
       pill.classList.add('active');
 
       projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (selected === 'all' || category === selected) {
+        const category = card.getAttribute('data-category') || '';
+        if (selected === 'all' || category.includes(selected)) {
           card.style.display = '';
         } else {
           card.style.display = 'none';
@@ -211,7 +211,7 @@ function openSuccessModal(name, phone, project) {
 
   if (waBtn) {
     const text = encodeURIComponent(
-      `Hello propertiesegy, I have just registered my interest in ${project} on your Palm Hills luxury landing page.\n\nName: ${name}\nPhone: ${phone}\n\nPlease share the private price list, brochure, and payment schedule.`
+      `Hello properties-m, I have just registered my interest in ${project} on your Palm Hills luxury landing page.\n\nName: ${name}\nPhone: ${phone}\n\nPlease share the private price list, brochure, and payment schedule.`
     );
     waBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${text}`;
   }
