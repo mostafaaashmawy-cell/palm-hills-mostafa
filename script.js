@@ -211,7 +211,7 @@ function openSuccessModal(name, phone, project) {
 
   if (waBtn) {
     const text = encodeURIComponent(
-      `Hello properties-m, I have just registered my interest in ${project} on your Palm Hills luxury landing page.\n\nName: ${name}\nPhone: ${phone}\n\nPlease share the private price list, brochure, and payment schedule.`
+      `Hello, I have just registered my interest in ${project} on the Palm Hills landing page.\n\nName: ${name}\nPhone: ${phone}\n\nPlease share the private price list, brochure, and payment schedule.`
     );
     waBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${text}`;
   }
